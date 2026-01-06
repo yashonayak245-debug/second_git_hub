@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sundae Process - Responsive</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin:32px;
+    background:lightblue (294 23% 11%);
+    color: #55546a;
+  }
+  .container {
+    display: flex;
+    max-width: 900px;
+    gap: 30px;
+    margin:auto;
+  }
+  .video-wrapper {
+    flex: 1 1 50%;
+  }
+  iframe {
+    width: 600px;
+    height:350px;
+    border: none;
+  }
+  .steps {
+    flex: 1 1 45%;
+  }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .circle {
+    background-color: #ce6f89;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 34px;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 40px;
+  }
+  .step-content h3 {
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    color: #4b4f79;
+    font-size: 24px;
+  }
+  .step-content p {
+    margin: 12;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #7c7c9a;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 38px;
+    }
+    .video-wrapper, .steps {
+      flex: none;
+      width: 400%;
+      height:600%;
+    }
+    iframe {
+      height: 4500px;
+    }
+    .step-content h3 {
+      font-size: 30px;
+    }
+    .step-content p {
+      font-size: 30px;
+    }
+    .circle {
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 16px;
+      margin-right: 15px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    iframe {
+      height: 500px;
+    }
+    .step-content h3 {
+      font-size: 28px;
+    }
+    .step-content p {
+      font-size: 28px;
+    }
+    .circle {
+      width: 30px;
+      height: 30px;
+      line-height:30px;
+      font-size: 28px;
+      margin-right: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?si=kDNlAeqSBJ4oQ-OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="circle">1</div>
+      <div class="step-content">
+        <h3>TELL US ABOUT YOUR PROPERTY</h3>
+        <p>Speak with a local Market Expert to find out if Sundae is a good fit for your property.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="circle">2</div>
+      <div class="step-content">
+        <h3>GET A CASH OFFER</h3>
+        <p>We’ll visit your property and make you a competitive cash offer on the spot!</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="circle">3</div>
+      <div class="step-content">
+        <h3>MOVE AT YOUR PACE</h3>
+        <p>Close as quickly as 10 days or as long as 60 - up to you! You may also be eligible for up to a $20K cash advance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
